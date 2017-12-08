@@ -33,6 +33,10 @@
         "MongoDB.Driver": {
           "target": "Package",
           "version": "2.4.4"
+        },
+        "System.IdentityModel.Tokens.Jwt": {
+          "target": "Package",
+          "version": "5.2.0-preview2-41113220915"
         }
       },
       "imports": [

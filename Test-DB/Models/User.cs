@@ -14,5 +14,7 @@ namespace Test_DB.Models
         public string Password { get; set; }
         [BsonElement("name")]
         public string Name { get; set; }
+        [BsonElement("role")]
+        public string Role { get; set; }
     }
 }
