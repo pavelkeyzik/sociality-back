@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="624de545-df60-449d-a48e-6fb08e90d876" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test-DB/bin/Debug/netcoreapp2.0/Test-DB.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test-DB/bin/Debug/netcoreapp2.0/Test-DB.pdb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test-DB/obj/Debug/netcoreapp2.0/Test-DB.AssemblyInfoInputs.cache" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test-DB/obj/Debug/netcoreapp2.0/Test-DB.csproj.CoreCompileInputs.cache" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test-DB/obj/Debug/netcoreapp2.0/Test-DB.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test-DB/obj/Debug/netcoreapp2.0/Test-DB.pdb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test-DB/obj/Test-DB.csproj.nuget.cache" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.Test-DB/.idea/contentModel.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.Test-DB/.idea/indexLayout.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.Test-DB/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.Test-DB/.idea/mongoSettings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.Test-DB/.idea/preferred-vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.Test-DB/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.Test-DB/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.Test-DB/riderModule.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test-DB.sln" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test-DB/Controllers/ValuesController.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test-DB/Models/Settings.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test-DB/Models/User.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test-DB/Models/UserContext.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test-DB/Program.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test-DB/Startup.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test-DB/Test-DB.csproj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test-DB/appsettings.Development.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test-DB/appsettings.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test-DB/bin/Debug/netcoreapp2.0/Test-DB.deps.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test-DB/bin/Debug/netcoreapp2.0/Test-DB.runtimeconfig.dev.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test-DB/bin/Debug/netcoreapp2.0/Test-DB.runtimeconfig.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test-DB/obj/Debug/netcoreapp2.0/Test-DB.AssemblyInfo.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test-DB/obj/Debug/netcoreapp2.0/Test-DB.csproj.FileListAbsolute.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test-DB/obj/Test-DB.csproj.nuget.g.props" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test-DB/obj/Test-DB.csproj.nuget.g.targets" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test-DB/obj/project.assets.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test-DB/obj/project.packagespec.json" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Pavel Keyzik" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Test-DB/Models/UserContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Test-DB/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Test-DB/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Test-DB/Controllers/ValuesController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Test-DB/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Test-DB/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Test-DB/Models/Settings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Test-DB/Models/User.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Test-DB/Models/Settings.cs" />
+        <option value="$PROJECT_DIR$/Test-DB/Startup.cs" />
+        <option value="$PROJECT_DIR$/Test-DB/Models/UserContext.cs" />
+        <option value="$PROJECT_DIR$/Test-DB/appsettings.json" />
+        <option value="$PROJECT_DIR$/Test-DB/Models/User.cs" />
+        <option value="$PROJECT_DIR$/Test-DB/Controllers/ValuesController.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="30" />
+    <option name="width" value="1270" />
+    <option name="height" value="712" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Test-DB (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Test-DB (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Test-DB" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.mongoOptions" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.Default">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Test-DB/bin/Debug/netcoreapp2.0/Test-DB.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test-DB" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs>
+        <env name="ASPNETCORE_ENVIRONMENT" value="Development" />
+        <env name="ASPNETCORE_URLS" value="http://localhost:5000" />
+      </envs>
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Test-DB/Test-DB.csproj" />
+      <option name="PROJECT_OUTPUT_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.0" />
+      <browser url="http://localhost:5000" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="624de545-df60-449d-a48e-6fb08e90d876" name="Default" comment="" />
+      <created>1512681733777</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1512681733777</updated>
+      <workItem from="1512681736131" duration="1849000" />
+      <workItem from="1512684569949" duration="329000" />
+      <workItem from="1512752924279" duration="551000" />
+      <workItem from="1512753805795" duration="2520000" />
+      <workItem from="1512759212319" duration="4521000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="9770000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="30" width="1366" height="738" extended-state="6" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SFDX" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25454545" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30807248" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1924342" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24621212" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2810606" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Log Manager" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init app" />
+    <option name="LAST_COMMIT_MESSAGE" value="init app" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Test-DB/Controllers/ValuesController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1512763981367" expanded="true" signature="6:208" ph="..." />
+            <marker date="1512763981367" expanded="true" signature="239:1376" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="316:1374" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="446:516" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="619:866" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="645:769" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="802:856" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="955:1003" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="1100:1120" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="1232:1252" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="1348:1368" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test-DB/Controllers/ValuesController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1512763981367" expanded="true" signature="6:208" ph="..." />
+            <marker date="1512763981367" expanded="true" signature="239:1376" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="316:1374" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="446:516" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="619:866" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="645:769" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="802:856" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="955:1003" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="1100:1120" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="1232:1252" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="1348:1368" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test-DB/Controllers/ValuesController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1512763981367" expanded="true" signature="6:208" ph="..." />
+            <marker date="1512763981367" expanded="true" signature="239:1376" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="316:1374" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="446:516" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="619:866" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="645:769" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="802:856" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="955:1003" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="1100:1120" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="1232:1252" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="1348:1368" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test-DB/Controllers/ValuesController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1512763981367" expanded="true" signature="6:208" ph="..." />
+            <marker date="1512763981367" expanded="true" signature="239:1376" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="316:1374" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="446:516" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="619:866" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="645:769" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="802:856" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="955:1003" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="1100:1120" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="1232:1252" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="1348:1368" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test-DB/Models/User.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <marker date="1512763966619" expanded="true" signature="6:64" ph="..." />
+            <marker date="1512763966619" expanded="true" signature="90:456" ph="{...}" />
+            <marker date="1512763966619" expanded="true" signature="114:454" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test-DB/Models/UserContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <folding>
+            <marker date="1512760706598" expanded="true" signature="6:57" ph="..." />
+            <marker date="1512760706598" expanded="true" signature="83:615" ph="{...}" />
+            <marker date="1512760706598" expanded="true" signature="114:613" ph="{...}" />
+            <marker date="1512760706598" expanded="true" signature="235:435" ph="{...}" />
+            <marker date="1512760706598" expanded="true" signature="480:607" ph="{...}" />
+            <marker date="1512760706598" expanded="true" signature="506:597" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test-DB/appsettings.Development.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1512681707951" expanded="true" signature="15:162" ph="{...}" />
+            <marker date="1512681707951" expanded="true" signature="61:158" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test-DB/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="28" column="35" lean-forward="false" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+          <folding>
+            <marker date="1512760366612" expanded="true" signature="6:352" ph="..." />
+            <marker date="1512760366612" expanded="true" signature="371:1452" ph="{...}" />
+            <marker date="1512760366612" expanded="true" signature="398:1450" ph="{...}" />
+            <marker date="1512760366612" expanded="true" signature="457:520" ph="{...}" />
+            <marker date="1512760366612" expanded="true" signature="743:1095" ph="{...}" />
+            <marker date="1512760366612" expanded="true" signature="849:1083" ph="{...}" />
+            <marker date="1512760366612" expanded="true" signature="1283:1444" ph="{...}" />
+            <marker date="1512760366612" expanded="true" signature="1330:1407" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test-DB/Models/Settings.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding>
+            <marker date="1512759999614" expanded="true" signature="24:138" ph="{...}" />
+            <marker date="1512759999614" expanded="true" signature="52:136" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test-DB/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1512681760630" expanded="false" signature="6:255" ph="..." />
+            <marker date="1512681760630" expanded="true" signature="274:595" ph="{...}" />
+            <marker date="1512681760630" expanded="true" signature="301:593" ph="{...}" />
+            <marker date="1512681760630" expanded="true" signature="354:412" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test-DB/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <marker date="1512762568378" expanded="true" signature="0:324" ph="{...}" />
+            <marker date="1512762568378" expanded="true" signature="15:207" ph="{...}" />
+            <marker date="1512762568378" expanded="true" signature="78:116" ph="{...}" />
+            <marker date="1512762568378" expanded="true" signature="159:197" ph="{...}" />
+            <marker date="1512762568378" expanded="true" signature="230:322" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test-DB/Controllers/ValuesController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding>
+            <marker date="1512763981367" expanded="true" signature="6:208" ph="..." />
+            <marker date="1512763981367" expanded="true" signature="239:1376" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="316:1374" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="446:516" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="619:866" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="645:769" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="802:856" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="955:1003" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="1100:1120" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="1232:1252" ph="{...}" />
+            <marker date="1512763981367" expanded="true" signature="1348:1368" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,45 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/home/pavel/RiderProjects/Test-DB/Test-DB/Test-DB.csproj",
+    "projectName": "Test-DB",
+    "projectPath": "/home/pavel/RiderProjects/Test-DB/Test-DB/Test-DB.csproj",
+    "outputPath": "/home/pavel/RiderProjects/Test-DB/Test-DB/obj/",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netcoreapp2.0"
+    ],
+    "frameworks": {
+      "netcoreapp2.0": {
+        "projectReferences": {}
+      }
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.0": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "target": "Package",
+          "version": "2.0.0"
+        },
+        "Microsoft.AspNetCore.All": {
+          "target": "Package",
+          "version": "2.0.0"
+        },
+        "MongoDB.Bson": {
+          "target": "Package",
+          "version": "2.4.4"
+        },
+        "MongoDB.Driver": {
+          "target": "Package",
+          "version": "2.4.4"
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

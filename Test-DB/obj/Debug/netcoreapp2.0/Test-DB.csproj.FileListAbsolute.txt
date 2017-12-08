@@ -1,0 +1,10 @@
+/home/pavel/RiderProjects/Test-DB/Test-DB/bin/Debug/netcoreapp2.0/Test-DB.deps.json
+/home/pavel/RiderProjects/Test-DB/Test-DB/bin/Debug/netcoreapp2.0/Test-DB.runtimeconfig.json
+/home/pavel/RiderProjects/Test-DB/Test-DB/bin/Debug/netcoreapp2.0/Test-DB.runtimeconfig.dev.json
+/home/pavel/RiderProjects/Test-DB/Test-DB/bin/Debug/netcoreapp2.0/Test-DB.dll
+/home/pavel/RiderProjects/Test-DB/Test-DB/bin/Debug/netcoreapp2.0/Test-DB.pdb
+/home/pavel/RiderProjects/Test-DB/Test-DB/obj/Debug/netcoreapp2.0/Test-DB.csproj.CoreCompileInputs.cache
+/home/pavel/RiderProjects/Test-DB/Test-DB/obj/Debug/netcoreapp2.0/Test-DB.AssemblyInfoInputs.cache
+/home/pavel/RiderProjects/Test-DB/Test-DB/obj/Debug/netcoreapp2.0/Test-DB.AssemblyInfo.cs
+/home/pavel/RiderProjects/Test-DB/Test-DB/obj/Debug/netcoreapp2.0/Test-DB.dll
+/home/pavel/RiderProjects/Test-DB/Test-DB/obj/Debug/netcoreapp2.0/Test-DB.pdb
