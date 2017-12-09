@@ -51,6 +51,8 @@ namespace Test_DB
                         ValidateIssuerSigningKey = true,
                     };
                 });
+            
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -61,6 +63,7 @@ namespace Test_DB
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors(builder => builder.AllowAnyOrigin());
             app.UseAuthentication();
             app.UseMvc();
         }
