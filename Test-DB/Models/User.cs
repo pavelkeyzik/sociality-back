@@ -6,8 +6,7 @@ namespace Test_DB.Models
     public class User
     {
         [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string _id { get; set; }
+        public ObjectId Id { get; set; }
         [BsonElement("login")]
         public string Login { get; set; }
         [BsonElement("password")]
