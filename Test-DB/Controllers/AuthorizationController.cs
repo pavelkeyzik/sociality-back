@@ -23,6 +23,7 @@ namespace Test_DB.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] User value)
         {
+            value.Password = new MD5(value.Password).getHash();
             var identity = GetIdentity(value.Login, value.Password);
             if (identity == null)
             {

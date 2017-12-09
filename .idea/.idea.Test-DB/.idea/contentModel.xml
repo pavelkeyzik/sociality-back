@@ -11,6 +11,7 @@
         </e>
         <e p="Models" t="Include">
           <e p="AuthOptions.cs" t="Include" />
+          <e p="MD5.cs" t="Include" />
           <e p="Settings.cs" t="Include" />
           <e p="User.cs" t="Include" />
           <e p="UserContext.cs" t="Include" />

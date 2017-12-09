@@ -28,6 +28,10 @@ namespace Test_DB.Controllers
             {
                 value.Id = new ObjectId();
                 value.Role = "user";
+                
+                var md5 = new MD5(value.Password);
+                value.Password = md5.getHash();
+                
                 if (value.Name == null)
                     value.Name = value.Login;
                 
