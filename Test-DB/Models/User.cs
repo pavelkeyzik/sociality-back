@@ -15,5 +15,7 @@ namespace Test_DB.Models
         public string Name { get; set; }
         [BsonElement("role")]
         public string Role { get; set; }
+        [BsonElement("avatar")]
+        public string Avatar { get; set; }
     }
 }

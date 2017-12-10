@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using MongoDB.Bson;
 using MongoDB.Driver;
 using MongoDB.Driver.Core.WireProtocol.Messages;
 using Test_DB.Models;
@@ -28,7 +29,7 @@ namespace Test_DB.Controllers
         // GET values
         [Authorize(Roles="admin")]
         [HttpGet]
-        public async Task<IEnumerable<User>> GetAllNotes()
+        public async Task<IEnumerable<User>> GetAllUsers()
         {
             try
             {
@@ -42,6 +43,7 @@ namespace Test_DB.Controllers
         }
 
         // GET values/5
+        [Authorize]
         [HttpGet("{id}")]
         public string Get(int id)
         {
