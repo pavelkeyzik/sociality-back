@@ -26,16 +26,14 @@ namespace Test_DB.Controllers
 
             try
             {
-                value.Id = new ObjectId();
-                value.Role = "user";
+                User user = new User()
+                {
+                    Login = value.Login,
+                    Password = new MD5(value.Password).getHash(),
+                    Role = "user"
+                };
                 
-                var md5 = new MD5(value.Password);
-                value.Password = md5.getHash();
-                
-                if (value.Name == null)
-                    value.Name = value.Login;
-                
-                _context.Users.InsertOne(value);
+                _context.Users.InsertOne(user);
                 return Ok();
             }
             catch (Exception e)

@@ -57,9 +57,19 @@ namespace Test_DB.Controllers
         }
 
         // DELETE values/5
+        [Authorize]
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult Delete(string id)
         {
+            try
+            {
+                _context.Users.DeleteOne(_ => _.Id == ObjectId.Parse(id));
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return NotFound(e);
+            }
         }
     }
 }

@@ -11,11 +11,7 @@ namespace Test_DB.Models
         public string Login { get; set; }
         [BsonElement("password")]
         public string Password { get; set; }
-        [BsonElement("name")]
-        public string Name { get; set; }
         [BsonElement("role")]
         public string Role { get; set; }
-        [BsonElement("avatar")]
-        public string Avatar { get; set; }
     }
 }
