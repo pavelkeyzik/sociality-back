@@ -63,7 +63,7 @@ namespace Test_DB.Controllers
         {
             try
             {
-                _context.Users.DeleteOne(_ => _.Id == ObjectId.Parse(id));
+                _context.Users.DeleteOne(_ => _.Id == id);
                 return Ok();
             }
             catch (Exception e)

@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using Test_DB.Controllers;
 using Test_DB.Models;
 
 namespace Test_DB
@@ -27,6 +28,7 @@ namespace Test_DB
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddSignalR();
             
             services.Configure<Settings>(options =>
             {
@@ -62,7 +64,10 @@ namespace Test_DB
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseSignalR(routes =>
+            {
+                routes.MapHub<ChatHub>("chat");
+            });
             app.UseCors(builder => builder.AllowAnyOrigin());
             app.UseAuthentication();
             app.UseMvc();

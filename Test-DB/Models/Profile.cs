@@ -6,7 +6,8 @@ namespace Test_DB.Models
     public class Profile
     {
         [BsonId]
-        public ObjectId Id { get; set; }
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string Id { get; set; }
         
         [BsonElement("login")]
         public string Login { get; set; }

@@ -32,7 +32,8 @@ namespace Test_DB.Controllers
 
             return Ok(new
             {
-                access_token = GenerateToken(identity)
+                access_token = GenerateToken(identity),
+                login = value.Login
             });
         }
         
