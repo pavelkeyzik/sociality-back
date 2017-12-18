@@ -7,13 +7,14 @@ namespace Test_DB.Models
     public class Dialog
     {
         [BsonId]
-        public ObjectId Id { get; set; }
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string Id { get; set; }
         
         [BsonElement("meId")]
         public string MeId { get; set; }
         
         [BsonElement("friendId")]
-        public string friendId { get; set; }
+        public string FriendId { get; set; }
 
         [BsonElement("lastMessage")]
         public string LastMessage { get; set; }

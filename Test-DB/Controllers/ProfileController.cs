@@ -93,6 +93,7 @@ namespace Test_DB.Controllers
             }
         }
 
+        [Authorize]
         [HttpPost]
         public IActionResult Post([FromBody] ProfilesFilter values)
         {
