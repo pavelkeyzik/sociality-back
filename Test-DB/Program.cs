@@ -19,7 +19,8 @@ namespace Test_DB
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
+                .UseUrls("http://localhost:5000")
+		.UseStartup<Startup>()
                 .Build();
     }
 }

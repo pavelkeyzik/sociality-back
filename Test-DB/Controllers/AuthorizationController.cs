@@ -14,10 +14,12 @@ namespace Test_DB.Controllers
     public class AuthorizationController : Controller
     {
         private readonly UserContext _context = null;
+        private readonly ProfileContext _contextProfile = null;
         
         public AuthorizationController(IOptions<Settings> settings)
         {
             _context = new UserContext(settings);
+            _contextProfile = new ProfileContext(settings);
         }
         
         [HttpPost]
@@ -30,10 +32,12 @@ namespace Test_DB.Controllers
                 return NotFound();
             }
 
+            var profile = _contextProfile.Profiles.Find(_ => _.Login == value.Login).FirstOrDefault();
+
             return Ok(new
             {
                 access_token = GenerateToken(identity),
-                login = value.Login
+                id = profile.Id
             });
         }
         

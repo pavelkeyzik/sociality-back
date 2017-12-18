@@ -49,7 +49,7 @@ namespace Test_DB.Controllers
                 };
                 
                 _contextProfile.Profiles.InsertOne(profile);
-                return Ok();
+                return Ok(new {message = "Ok"});
             }
             catch (Exception e)
             {

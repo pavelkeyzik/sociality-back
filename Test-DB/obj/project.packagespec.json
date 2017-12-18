@@ -26,6 +26,10 @@
           "target": "Package",
           "version": "2.0.0"
         },
+        "Microsoft.AspNetCore.Cors": {
+          "target": "Package",
+          "version": "2.0.1"
+        },
         "Microsoft.AspNetCore.SignalR": {
           "target": "Package",
           "version": "1.0.0-alpha2-final"

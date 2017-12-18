@@ -17,19 +17,19 @@ namespace Test_DB.Controllers
     public class ProfileController : Controller
     {
         private readonly ProfileContext _context = null;
-        
+
         public ProfileController(IOptions<Settings> settings)
         {
             _context = new ProfileContext(settings);
         }
-        
+
         [Authorize]
-        [HttpGet("{login}")]
-        public IActionResult Get(string login)
+        [HttpGet("{id}")]
+        public IActionResult Get(string id)
         {
             try
             {
-                var profile = _context.Profiles.Find(_ => _.Login == login).FirstOrDefault();
+                var profile = _context.Profiles.Find(_ => _.Id == id).FirstOrDefault();
                 if (profile == null)
                     profile = _context.Profiles.Find(_ => _.Login == User.Identity.Name).FirstOrDefault();
                 return Ok(profile);
@@ -40,9 +40,9 @@ namespace Test_DB.Controllers
             }
         }
 
-        [AllowAnonymous]
-        [HttpPut("{login}")]
-        public IActionResult Put(string login, [FromBody] Profile value)
+        [Authorize] // Редактирование профиля
+        [HttpPut("{id}")]
+        public IActionResult Put(string id, [FromBody] Profile value)
         {
             try
             {
@@ -72,8 +72,8 @@ namespace Test_DB.Controllers
                 {
                     x.Add("'gender': '" + value.Gender + "'");
                 }
-                
-                
+
+
                 var list = x.ToArray();
                 StringBuilder sendedParams = new StringBuilder("");
                 for (int i = 0; i < list.Length; i++)
@@ -83,14 +83,21 @@ namespace Test_DB.Controllers
                         sendedParams.Append(',');
                 }
                 var set = "{ $set : {" + sendedParams + "} }";
-                
-                _context.Profiles.FindOneAndUpdate(_ => _.Login == login, set);
+
+                _context.Profiles.FindOneAndUpdate(_ => _.Id == id, set);
                 return Ok();
             }
             catch (Exception e)
             {
                 return NotFound(e);
             }
+        }
+
+        [HttpPost]
+        public IActionResult Post([FromBody] ProfilesFilter values)
+        {
+            var profiles = _context.Profiles.Find(_ => true).Skip((values.page - 1) * values.limit).Limit(values.limit).ToList();
+            return Ok(profiles);
         }
     }
 }

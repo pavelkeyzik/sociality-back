@@ -68,7 +68,11 @@ namespace Test_DB
             {
                 routes.MapHub<ChatHub>("chat");
             });
-            app.UseCors(builder => builder.AllowAnyOrigin());
+            app.UseCors(builder => builder
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .AllowCredentials()); 
             app.UseAuthentication();
             app.UseMvc();
         }

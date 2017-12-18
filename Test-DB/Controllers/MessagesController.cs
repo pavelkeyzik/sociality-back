@@ -25,8 +25,8 @@ namespace Test_DB.Controllers
         }
 
         [Authorize]
-        [HttpGet]
-        public IActionResult GetMessages()
+        [HttpGet("{friendId}")]
+        public IActionResult GetMessages(string friendId)
         {
             var user = _contextProfiles.Profiles.Find(_ => _.Login == User.Identity.Name).FirstOrDefault();
             
@@ -36,12 +36,48 @@ namespace Test_DB.Controllers
             string id = user.Id;
             try
             {
-                var messages = _context.Messages.Find(_ => _.RecipientId == id).ToListAsync();
+                var messages = _context.Messages.Find(_ => _.RecipientId == id && _.FriendId == friendId).ToListAsync();
                 
                 if (messages == null)
                     return NotFound();
                 
                 return Ok(messages);
+            }
+            catch (Exception e)
+            {
+                return BadRequest();
+            }
+        }
+
+        [Authorize]
+        [HttpPost("{friendId}")]
+        public IActionResult SendMessage(string friendId, [FromBody] Message message)
+        {
+            var user = _contextProfiles.Profiles.Find(_ => _.Login == User.Identity.Name).FirstOrDefault();
+            
+            if (user == null)
+                return BadRequest();
+            
+            try
+            {
+                var messageForMe = new Message()
+                {
+                    AuthorId = user.Id,
+                    RecipientId = user.Id,
+                    FriendId = friendId,
+                    Type = message.Type,
+                    MessageText = message.MessageText
+                };
+
+                var messageForFriend = message;
+                messageForFriend.AuthorId = user.Id;
+                messageForFriend.RecipientId = friendId;
+                messageForFriend.FriendId = user.Id;
+                
+                _context.Messages.InsertOne(messageForMe);
+                _context.Messages.InsertOne(messageForFriend);
+                
+                return Ok();
             }
             catch (Exception e)
             {

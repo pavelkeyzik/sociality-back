@@ -6,13 +6,17 @@ namespace Test_DB.Models
     public class Message
     {
         [BsonId]
-        public ObjectId Id { get; set; }
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string Id { get; set; }
         
         [BsonElement("authorId")]
         public string AuthorId { get; set; }
         
         [BsonElement("recipientId")]
         public string RecipientId { get; set; }
+        
+        [BsonElement("friendId")]
+        public string FriendId { get; set; }
         
         [BsonElement("type")]
         public string Type { get; set; }
