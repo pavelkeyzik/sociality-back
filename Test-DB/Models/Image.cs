@@ -6,7 +6,8 @@ namespace Test_DB.Models
     public class Image
     {
         [BsonId]
-        public ObjectId Id { get; set; }
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string Id { get; set; }
         [BsonElement("url")]
         public string Url { get; set; }
         [BsonElement("title")]

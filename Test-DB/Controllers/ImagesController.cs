@@ -24,20 +24,21 @@ namespace Test_DB.Controllers
             _env = env;
             _context = new ImageContext(settings);
         }
-        [AllowAnonymous]
+        
+        [Authorize]
         [HttpGet]
         public IActionResult GetImage(string id)
         {
             if(id == null){ return NotFound(); }
             else
             {
-                var image = _context.Images.Find(_ => _.Id == ObjectId.Parse(id)).FirstOrDefault();
+                var image = _context.Images.Find(_ => _.Id == id).FirstOrDefault();
                 Byte[] b = System.IO.File.ReadAllBytes(_env.ContentRootPath + "/wwwroot/images/" + image.Url);
                 return File(b, "image/jpeg");
             }
         }
 
-        [AllowAnonymous]
+        [Authorize]
         [HttpPost]
         public IActionResult UploadImage()
         {
