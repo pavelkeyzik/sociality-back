@@ -17,7 +17,7 @@ namespace Test_DB.Controllers
         private readonly DialogContext _context = null;
         private readonly ProfileContext _contextProfile = null;
         private IHostingEnvironment _env;
-
+    
         public DialogsController(IOptions<Settings> settings, IHostingEnvironment env)
         {
             _env = env;
@@ -34,14 +34,10 @@ namespace Test_DB.Controllers
             if (user == null)
                 return BadRequest();
             
-//            string id = user.Id;
             try
             {
-//                var koko = ObjectId.Parse("5a34ea801f265bc318e74753").ToString();
                 string koka = user.Id;
                 var dialogs = _context.Dialogs.Find(_ => _.MeId == user.Id).ToListAsync();
-
-//                var lol = JsonSerializer(dialogs);
                 
                 if (dialogs == null)
                     return NotFound();

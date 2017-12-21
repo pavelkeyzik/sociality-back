@@ -28,7 +28,7 @@ namespace Test_DB.Controllers
             var person = _context.Users.Find(_ => _.Login == value.Login).FirstOrDefault();
             if (person != null)
                 return BadRequest();
-
+    
             try
             {
                 User user = new User()
@@ -39,7 +39,7 @@ namespace Test_DB.Controllers
                 };
                 
                 _context.Users.InsertOne(user);
-
+    
                 var profile = new Profile()
                 {
                     Login = user.Login,

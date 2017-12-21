@@ -31,9 +31,9 @@ namespace Test_DB.Controllers
             {
                 return NotFound();
             }
-
+    
             var profile = _contextProfile.Profiles.Find(_ => _.Login == value.Login).FirstOrDefault();
-
+    
             return Ok(new
             {
                 access_token = GenerateToken(identity),
@@ -56,10 +56,10 @@ namespace Test_DB.Controllers
                         ClaimsIdentity.DefaultRoleClaimType);
                 return claimsIdentity;
             }
- 
+    
             return null;
         }
-
+    
         private string GenerateToken(ClaimsIdentity identity)
         {
             var now = DateTime.UtcNow;

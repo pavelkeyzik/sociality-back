@@ -17,7 +17,7 @@ namespace Test_DB.Controllers
         private readonly ProfileContext _contextProfiles = null;
         private readonly DialogContext _contextDialogs = null;
         private IHostingEnvironment _env;
-
+    
         public MessagesController(IOptions<Settings> settings, IHostingEnvironment env)
         {
             _env = env;
@@ -25,7 +25,7 @@ namespace Test_DB.Controllers
             _contextProfiles = new ProfileContext(settings);
             _contextDialogs = new DialogContext(settings);
         }
-
+    
         [Authorize]
         [HttpGet("{friendId}")]
         public IActionResult GetMessages(string friendId)
@@ -50,7 +50,7 @@ namespace Test_DB.Controllers
                 return BadRequest();
             }
         }
-
+    
         [Authorize]
         [HttpPost("{friendId}")]
         public IActionResult SendMessage(string friendId, [FromBody] Message message)
@@ -70,7 +70,7 @@ namespace Test_DB.Controllers
                     Type = message.Type,
                     MessageText = message.MessageText
                 };
-
+    
                 var messageForFriend = message;
                 messageForFriend.AuthorId = user.Id;
                 messageForFriend.RecipientId = friendId;
@@ -78,12 +78,12 @@ namespace Test_DB.Controllers
                 
                 _context.Messages.InsertOne(messageForMe);
                 _context.Messages.InsertOne(messageForFriend);
-
+    
                 var messageDate = DateTime.UtcNow;
                 
                 var dialogMe = _contextDialogs.Dialogs.Find(_ => _.MeId == user.Id && _.FriendId == friendId).FirstOrDefault();
                 var dialogFriend = _contextDialogs.Dialogs.Find(_ => _.MeId == friendId && _.FriendId == user.Id).FirstOrDefault();
-
+    
                 bool dialog1 = false, dialog2 = false;
                 
                 var unreadedMe = 0;
@@ -91,7 +91,7 @@ namespace Test_DB.Controllers
                 {
                     dialog1 = true;
                 }
-
+    
                 var unreadedFriend = 0;
                 if (dialogFriend != null)
                 {
@@ -99,7 +99,7 @@ namespace Test_DB.Controllers
                     unreadedFriend = dialogFriend.Unreaded;
                     unreadedFriend += 1;
                 }
-
+    
                 var dialogForMe = new
                 {
                     meId = user.Id,
@@ -117,19 +117,17 @@ namespace Test_DB.Controllers
                     dateMessage = messageDate,
                     unreaded = unreadedFriend
                 };
-
+    
                 var sukaMe = dialogForMe.ToBsonDocument();
                 var setMe = "{ $set : " + sukaMe + " }";
-
+    
                 var sukaFriend = dialogForFriend.ToBsonDocument();
                 var setFriend = "{ $set : " + sukaFriend + " }";
-
-                if (dialog1 || dialog2)
+    
+                if (dialog1 && dialog2)
                 {
-                    if(dialog1)
-                        _contextDialogs.Dialogs.FindOneAndUpdate(_ => _.MeId == user.Id, setMe);
-                    if(dialog2)
-                        _contextDialogs.Dialogs.FindOneAndUpdate(_ => _.FriendId == user.Id, setFriend);
+                    if(dialog1) _contextDialogs.Dialogs.FindOneAndUpdate(_ => _.MeId == user.Id && _.FriendId == friendId, setMe);
+                    if(dialog2) _contextDialogs.Dialogs.FindOneAndUpdate(_ => _.FriendId == user.Id && _.MeId == friendId, setFriend);
                 }
                 else
                 {
@@ -147,7 +145,6 @@ namespace Test_DB.Controllers
                     lolFriend.LastMessage = dialogForFriend.lastMessage;
                     lolFriend.DateMessage = dialogForFriend.dateMessage;
                     lolFriend.Unreaded = 1;
-                    
                     _contextDialogs.Dialogs.InsertOne(lolFriend);
                 }
                 return Ok();
@@ -157,7 +154,7 @@ namespace Test_DB.Controllers
                 return BadRequest();
             }
         }
-
+    
         [Authorize]
         [HttpGet("read/{friendId}")]
         public IActionResult ReadMessage(string friendId)

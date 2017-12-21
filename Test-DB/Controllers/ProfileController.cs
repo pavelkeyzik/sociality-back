@@ -17,12 +17,12 @@ namespace Test_DB.Controllers
     public class ProfileController : Controller
     {
         private readonly ProfileContext _context = null;
-
+    
         public ProfileController(IOptions<Settings> settings)
         {
             _context = new ProfileContext(settings);
         }
-
+    
         [Authorize]
         [HttpGet("{id}")]
         public IActionResult Get(string id)
@@ -39,41 +39,21 @@ namespace Test_DB.Controllers
                 return NotFound(e);
             }
         }
-
-        [Authorize] // Редактирование профиля
+    
+        [Authorize]
         [HttpPut("{id}")]
         public IActionResult Put(string id, [FromBody] Profile value)
         {
             try
             {
                 var x = new List<string>();
-
-                if (value.Name != null)
-                {
-                    x.Add("'name': '" + value.Name + "'");
-                }
-                if (value.Online != null)
-                {
-                    x.Add("'online': " + value.Online.ToString().ToLower());
-                }
-                if (value.Phone != null)
-                {
-                    x.Add("'phone': '" + value.Phone + "'");
-                }
-                if (value.Email != null)
-                {
-                    x.Add("'email': '" + value.Email + "'");
-                }
-                if (value.Avatar != null)
-                {
-                    x.Add("'avatar': '" + value.Avatar + "'");
-                }
-                if (value.Gender != null)
-                {
-                    x.Add("'gender': '" + value.Gender + "'");
-                }
-
-
+                if (value.Name != null) x.Add("'name': '" + value.Name + "'");
+                if (value.Online != null) x.Add("'online': " + value.Online.ToString().ToLower());
+                if (value.Phone != null) x.Add("'phone': '" + value.Phone + "'");
+                if (value.Email != null) x.Add("'email': '" + value.Email + "'");
+                if (value.Avatar != null) x.Add("'avatar': '" + value.Avatar + "'");
+                if (value.Gender != null) x.Add("'gender': '" + value.Gender + "'");
+    
                 var list = x.ToArray();
                 StringBuilder sendedParams = new StringBuilder("");
                 for (int i = 0; i < list.Length; i++)
@@ -83,16 +63,16 @@ namespace Test_DB.Controllers
                         sendedParams.Append(',');
                 }
                 var set = "{ $set : {" + sendedParams + "} }";
-
+    
                 _context.Profiles.FindOneAndUpdate(_ => _.Id == id, set);
-                return Ok();
+                return Ok("[]");
             }
             catch (Exception e)
             {
                 return NotFound(e);
             }
         }
-
+    
         [Authorize]
         [HttpPost]
         public IActionResult Post([FromBody] ProfilesFilter values)
