@@ -2779,6 +2779,18 @@
           }
         }
       },
+      "MimeMapping/1.0.1.12": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/MimeMapping.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/MimeMapping.dll": {}
+        }
+      },
       "MongoDB.Bson/2.4.4": {
         "type": "package",
         "dependencies": {
@@ -7770,6 +7782,17 @@
         "runtimes/win/lib/netstandard1.3/Microsoft.Win32.Registry.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "MimeMapping/1.0.1.12": {
+      "sha512": "fuSvazGD66PD9qnDGxw1NXKD2cg+fda5LGwJ33efO9nVnWpxh/ACCjLdGxed/Vd703v6OvtDrxxD6LCvfrtGIg==",
+      "type": "package",
+      "path": "mimemapping/1.0.1.12",
+      "files": [
+        "lib/netstandard1.1/MimeMapping.dll",
+        "lib/netstandard1.1/MimeMapping.xml",
+        "mimemapping.1.0.1.12.nupkg.sha512",
+        "mimemapping.nuspec"
       ]
     },
     "MongoDB.Bson/2.4.4": {
@@ -13119,6 +13142,7 @@
       "Microsoft.AspNetCore.Cors >= 2.0.1",
       "Microsoft.AspNetCore.SignalR >= 1.0.0-alpha2-final",
       "Microsoft.NETCore.App >= 2.0.0",
+      "MimeMapping >= 1.0.1.12",
       "MongoDB.Bson >= 2.4.4",
       "MongoDB.Driver >= 2.4.4",
       "Newtonsoft.Json >= 11.0.1-beta1",
@@ -13180,6 +13204,10 @@
           "Microsoft.AspNetCore.SignalR": {
             "target": "Package",
             "version": "1.0.0-alpha2-final"
+          },
+          "MimeMapping": {
+            "target": "Package",
+            "version": "1.0.1.12"
           },
           "MongoDB.Bson": {
             "target": "Package",

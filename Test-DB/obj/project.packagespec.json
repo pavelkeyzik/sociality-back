@@ -34,6 +34,10 @@
           "target": "Package",
           "version": "1.0.0-alpha2-final"
         },
+        "MimeMapping": {
+          "target": "Package",
+          "version": "1.0.1.12"
+        },
         "MongoDB.Bson": {
           "target": "Package",
           "version": "2.4.4"

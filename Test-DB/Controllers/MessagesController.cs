@@ -62,25 +62,32 @@ namespace Test_DB.Controllers
             
             try
             {
+                var messageDate = DateTime.UtcNow;
+
                 var messageForMe = new Message()
                 {
                     AuthorId = user.Id,
                     RecipientId = user.Id,
                     FriendId = friendId,
+                    MessageDate = messageDate,
                     Type = message.Type,
                     MessageText = message.MessageText
                 };
+
+                if (message.Type == "text")
+                    messageForMe.MessageText = message.MessageText;
+                else if (message.Type == "image")
+                    messageForMe.MessageImage = message.MessageImage;
     
                 var messageForFriend = message;
                 messageForFriend.AuthorId = user.Id;
                 messageForFriend.RecipientId = friendId;
                 messageForFriend.FriendId = user.Id;
+                messageForFriend.MessageDate = messageDate;
                 
                 _context.Messages.InsertOne(messageForMe);
                 _context.Messages.InsertOne(messageForFriend);
     
-                var messageDate = DateTime.UtcNow;
-                
                 var dialogMe = _contextDialogs.Dialogs.Find(_ => _.MeId == user.Id && _.FriendId == friendId).FirstOrDefault();
                 var dialogFriend = _contextDialogs.Dialogs.Find(_ => _.MeId == friendId && _.FriendId == user.Id).FirstOrDefault();
     
@@ -99,12 +106,19 @@ namespace Test_DB.Controllers
                     unreadedFriend = dialogFriend.Unreaded;
                     unreadedFriend += 1;
                 }
+
+                string dialogText = "";
     
+                if (message.Type == "text")
+                    dialogText = message.MessageText;
+                else if (message.Type == "image")
+                    dialogText = "Attachment";
+                
                 var dialogForMe = new
                 {
                     meId = user.Id,
                     friendId = friendId,
-                    lastMessage = message.MessageText,
+                    lastMessage = dialogText,
                     dateMessage = messageDate,
                     unreaded = unreadedMe
                 };
@@ -113,7 +127,7 @@ namespace Test_DB.Controllers
                 {
                     meId = friendId,
                     friendId = user.Id,
-                    lastMessage = message.MessageText,
+                    lastMessage = dialogText,
                     dateMessage = messageDate,
                     unreaded = unreadedFriend
                 };
