@@ -36,7 +36,6 @@ namespace Test_DB.Controllers
             
             try
             {
-                string koka = user.Id;
                 var dialogs = _context.Dialogs.Find(_ => _.MeId == user.Id).ToListAsync();
                 
                 if (dialogs == null)
